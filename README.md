@@ -46,6 +46,7 @@ Follow these steps to set up the project on your system.
 ```bash
 git clone https://github.com/tommattoo/yolo-real-time-detection.git
 cd yolo-real-time-detection
+```
 
 ### 2. Install Poetry (if not already installed)
 
@@ -53,6 +54,7 @@ Poetry is used to manage dependencies for this project. To install Poetry, run t
 
 ```bash
 pip install poetry
+```
 
 ### 3. Install Dependencies
 
@@ -60,18 +62,21 @@ With Poetry installed, you can install all the necessary dependencies:
 
 ```bash
 poetry install
+```
 ### 4. Activate the Poetry Environment
 
 To activate the virtual environment and ensure you are using the correct dependencies, run the following command:
 
 ```bash
 poetry shell
+```
 ### Usage
 
 After installing the dependencies and activating the environment, run the following command to start real-time object detection using your webcam:
 
 ```bash
 python main.py
+```
 
 ### Keyboard Shortcuts
 
@@ -95,6 +100,7 @@ By default, the project uses the small YOLOv8 model (`yolov8n.pt`). You can chan
 ```python
 import cv2
 from ultralytics import YOLO
+```
 
 # Load YOLOv8 model
 model = YOLO('yolov8n.pt')  # You can replace 'yolov8n.pt' with other model variants
