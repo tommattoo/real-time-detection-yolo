@@ -70,6 +70,16 @@ To activate the virtual environment and ensure you are using the correct depende
 ```bash
 poetry shell
 ```
+
+### 5. How to solve issues
+
+If the terminal gives error, try uninstall and install poetry back.
+
+```bash
+poetry env remove $(poetry env info --path)
+poetry install
+```
+
 ### Usage
 
 After installing the dependencies and activating the environment, run the following command to start real-time object detection using your webcam:
